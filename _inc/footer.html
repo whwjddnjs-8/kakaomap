@@ -1,0 +1,32 @@
+<div class="footer__wrapper">
+   <div class="d-flex-cc">
+      <div class="footer__logo">
+         <img src="./_image/logo_white.svg" alt="로고">
+      </div>
+      <div class="footer__cmpny-info">
+         대표자명 : 임영우 &nbsp;I&nbsp; 정보관리책임자 : 이지연 &nbsp;I&nbsp; 서울시 서초구 서초중앙로 130, 7층 701호<br>
+         감비정D 원외탕전 가입 문의 nubebe_won@nubebe.com &nbsp;I&nbsp; 010-9570-0036
+         <p class="copyright">
+            ⓒ2023. NUBEBE. All rights reserved
+         </p>
+      </div>
+   </div>
+   <div>
+      <select id="select" class="custom-select" onchange="select_familysite(this)">
+         <option value="none">패밀리사이트</option>
+         <option value="http://h-herb.co.kr/">누베베 원외탕전실</option>
+         <option value="http://nubebe.com/">누베베 한의원</option>
+      </select>
+   </div>
+</div>
+
+<script>
+   function select_familysite(select) {
+      if (select.value != 'none') {
+         window.open(select.value);
+         select.value = 'none';
+      } else {
+         return;
+      }
+   }
+</script>
